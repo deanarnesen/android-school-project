@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatFragment"
+    android:background="@drawable/tickettobidebackgroundblack">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:layout_columnWeight="1"
+            android:background="#aa313446">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chat"
+                android:textSize="24dp"
+                android:textColor="#a0aaeb"
+                android:layout_gravity="center_horizontal"/>
+            <!--comments-->
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/fragment_chat_list_messages"
+                android:layout_width="match_parent"
+                android:layout_height="30mm"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/fragment_chat_send_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send"
+                    android:textColor="#8890d9"
+                    android:background="#881d1f2b"
+                    />
+
+
+                <EditText
+                    android:id="@+id/fragment_chat_text_tosend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/message"
+                    android:textColorHint="#6d73ad"
+                    android:layout_weight="1"
+                    android:textColor="#6d73ad"/>
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:textColor="#8890d9"
+                    android:background="#881d1f2b"
+                    android:onClick="goBackFromChat"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_columnWeight="1"
+        android:background="#aa313446">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chat"
+            android:textSize="24dp"
+            android:textColor="#a0aaeb"
+            android:layout_gravity="center_horizontal"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_list_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="30mm"
+            >
+
+        </android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/send_message_button_chat_fragment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send"
+                android:textColor="#8890d9"
+                android:background="#881d1f2b"/>
+
+            <EditText
+                android:id="@+id/message_text_chat_fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/message"
+                android:textColorHint="#6d73ad"
+                android:textColor="#6d73ad"/>
+        </LinearLayout>
+    </LinearLayout>
+    -->
+
+</FrameLayout>

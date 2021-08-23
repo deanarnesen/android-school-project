@@ -1,0 +1,1 @@
+{"gameName":"asdf","host":"me","maxNumberPlayers":10,"numberOfPlayers":2,"publicGames":true,"isStaretedGame":true,"gamePassword":"xxxxx"}

@@ -1,0 +1,17 @@
+apply plugin: 'java-library'
+
+dependencies {
+    //implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    implementation project(':SharedData')
+    implementation 'junit:junit:4.12'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation project(':DatabaseInterface')
+    implementation project(':SQLitePlugIn')
+    implementation files('libs/sqlite-jdbc-3.27.2.1.jar')
+    implementation files('libs/mongo-java-driver-2.13.3-javadoc.jar')
+    implementation files('libs/commons-io-2.6.jar')
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"

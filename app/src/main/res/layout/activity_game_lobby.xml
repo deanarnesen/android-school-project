@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameLobbyActivity"
+    android:background="@drawable/tickettobidebackgroundblack">
+
+
+<!--Vertical-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="20dp">
+
+        <!--<ImageView-->
+            <!--android:layout_width="30mm"-->
+            <!--android:layout_height="10mm"-->
+            <!--android:src="@drawable/lobby"/>-->
+
+        <TextView
+            android:background="@drawable/border"
+            android:id="@+id/game_lobby_game_name"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_height="wrap_content"
+            android:text="@string/game_name"
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:textColor="#eb9f94"/>
+
+        <!--The whole thing       -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2">
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:background="#88000000">
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:columnCount="5">
+
+                    <ImageView
+                        android:id="@+id/blue_color_button"
+                        android:layout_width="5mm"
+                        android:layout_height="5mm"
+
+                        android:src="@drawable/blue"/>
+                    <ImageView
+                        android:id="@+id/black_color_button"
+                        android:layout_width="5mm"
+                        android:layout_height="5mm"
+                        android:src="@drawable/black"/>
+
+                    <ImageView
+                        android:id="@+id/green_color_button"
+                        android:layout_width="5mm"
+                        android:layout_height="5mm"
+                        android:src="@drawable/green"/>
+                    <ImageView
+                        android:id="@+id/red_color_button"
+                        android:layout_width="5mm"
+                        android:layout_height="5mm"
+                        android:src="@drawable/red"/>
+                    <ImageView
+                        android:id="@+id/yellow_color_button"
+                        android:layout_width="5mm"
+                        android:layout_height="5mm"
+                        android:src="@drawable/yellow"/>
+                </GridLayout>
+
+                <!--users-->
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/game_lobby_player"
+                    android:layout_width="match_parent"
+                    android:layout_height="30mm"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/game_lobby_start_button"
+                        android:text="@string/start_game"
+                        android:textColor="#fff"
+                        android:textSize="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/mybutton"
+                        android:layout_gravity="center_vertical|center_horizontal"/>
+                    <Button
+                        android:id="@+id/game_lobby_cancel_button"
+                        android:textSize="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cancel"
+                        android:layout_weight="1"
+                        android:textColor="#ffff"
+                        android:background="@drawable/mycancelbutton"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"
+                android:layout_columnWeight="1"
+                android:background="#aa313446">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chat"
+                    android:textSize="24dp"
+                    android:textColor="#a0aaeb"
+                    android:layout_gravity="center_horizontal"/>
+                <!--comments-->
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/game_lobby_chat_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="30mm"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/send_message_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/send"
+                        android:textColor="#8890d9"
+                        android:background="#881d1f2b"/>
+
+                    <EditText
+                        android:id="@+id/message_text"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/message"
+                        android:textColorHint="#6d73ad"
+                        android:textColor="#6d73ad"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </GridLayout>
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_gravity="center_horizontal|center_vertical"-->
+            <!--android:gravity="center_horizontal">-->
+
+            <!--<Button-->
+                <!--android:text="@string/create_game"-->
+                <!--android:textColor="#fff"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/mybutton"-->
+                <!--android:layout_gravity="center_vertical|center_horizontal"/>-->
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/cancel"-->
+                <!--android:textColor="#ffff"-->
+                <!--android:background="@drawable/mycancelbutton"/>-->
+
+        <!--</LinearLayout>-->
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

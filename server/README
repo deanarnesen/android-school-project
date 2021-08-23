@@ -1,0 +1,31 @@
+These are the command line arguments I used to get the plugin working
+Remember if you change the DatabasePlugin module, you'll have to rebuild and then re-copy the new
+jar file build into the libs folder of SQLitePlugin module. Then rebuild one more time, and you should
+be set. 
+
+
+I made some modifications so we can have the AbstractFactory in the implementation. It is working fine.
+
+Now the last argument in the command line is the number of commands to be saved.
+
+
+8080
+C:\Users\Dean\TicketToRide\SQLitePlugIn\build\libs   //this line will be different depending on your cpu
+SQLitePlugin.jar
+SQLiteDatabase
+10
+
+
+
+NOTE:
+
+HOW IT WORKS? 
+
+The IDatabase will create the DAOS.
+
+just call the functions:
+
+    createUserDAO()     ->  Returns : a IUserDAO object
+    createPlayerDAO()   ->  Returns : a IPlayerDAO object
+    createGameDAO()     ->  Returns : a IGameDAO object
+

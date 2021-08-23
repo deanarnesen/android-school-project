@@ -1,0 +1,121 @@
+[ {"startCity" : "Denver",
+   "endCity" : "El Paso",
+   "pointValue" : 4
+  },
+  {"startCity" : "Kansas City",
+   "endCity" : "Houston",
+   "pointValue" : 5
+  },
+  {"startCity" : "New York",
+    "endCity" : "Atlanta",
+    "pointValue" : 6
+  },
+  {"startCity" : "Chicago",
+    "endCity" : "New Orleans",
+    "pointValue" : 7
+  },
+  {"startCity" : "Calgary",
+    "endCity" : "Salt Lake City",
+    "pointValue" : 7
+  },
+  {"startCity" : "Helena",
+    "endCity" : "Los Angeles",
+    "pointValue" : 8
+  },
+  {"startCity" : "Houston",
+    "endCity" : "Duluth",
+    "pointValue" : 8
+  },
+  {"startCity" : "Sault Ste. Marie",
+    "endCity" : "Nashville",
+    "pointValue" : 8
+  },
+  {"startCity" : "Montreal",
+    "endCity" : "Atlanta",
+    "pointValue" : 9
+  },
+  {"startCity" : "Sault Ste. Marie",
+    "endCity" : "Oklahoma City",
+    "pointValue" : 9
+  },
+  {"startCity" : "Seattle",
+    "endCity" : "Los Angeles",
+    "pointValue" : 9
+  },
+  {"startCity" : "Chicago",
+    "endCity" : "Santa Fe",
+    "pointValue" : 9
+  },
+  {"startCity" : "Duluth",
+    "endCity" : "El Paso",
+    "pointValue" : 10
+  },
+  {"startCity" : "Toronto",
+    "endCity" : "Miami",
+    "pointValue" : 10
+  },
+  {"startCity" : "Portland",
+    "endCity" : "Phoenix",
+    "pointValue" : 11
+  },
+  {"startCity" : "Dallas",
+    "endCity" : "New York City",
+    "pointValue" : 11
+  },
+  {"startCity" : "Denver",
+    "endCity" : "Pittsburgh",
+    "pointValue" : 11
+  },
+  {"startCity" : "Winnipeg",
+    "endCity" : "Little Rock",
+    "pointValue" : 11
+  },
+  {"startCity" : "Winnipeg",
+    "endCity" : "Houston",
+    "pointValue" : 12
+  },
+  {"startCity" : "Boston",
+    "endCity" : "Miami",
+    "pointValue" : 12
+  },
+  {"startCity" : "Vancouver",
+    "endCity" : "Santa Fe",
+    "pointValue" : 13
+  },
+  {"startCity" : "Calgary",
+    "endCity" : "Phoenix",
+    "pointValue" : 13
+  },
+  {"startCity" : "Montreal",
+    "endCity" : "New Orleans",
+    "pointValue" : 13
+  },
+  {"startCity" : "Los Angeles",
+    "endCity" : "Chicago",
+    "pointValue" : 16
+  },
+  {"startCity" : "San Francisco",
+    "endCity" : "Atlanta",
+    "pointValue" : 17
+  },
+  {"startCity" : "Portland",
+    "endCity" : "Nashville",
+    "pointValue" : 17
+  },
+  {"startCity" : "Vancouver",
+    "endCity" : "Montreal",
+    "pointValue" : 20
+  },
+  {"startCity" : "Los Angeles",
+    "endCity" : "Miami",
+    "pointValue" : 20
+  },
+  {"startCity" : "Los Angeles",
+    "endCity" : "New York City",
+    "pointValue" : 21
+  },
+  {"startCity" : "Seattle",
+    "endCity" : "New York",
+    "pointValue" : 22
+  }
+]

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3">
+
+
+            <TextView
+                android:id="@+id/game_itme_game_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/game_name"
+                android:textColor="#90dffc"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/game_item_no_players"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_player"
+                android:textColor="#a4c4fc"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-medium"
+                android:layout_columnWeight="1"
+                android:gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/game_item_join_button_game"
+                android:text="@string/join"
+                android:textColor="#fff"
+                android:background="@drawable/mybutton"
+                />
+        </GridLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

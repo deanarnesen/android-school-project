@@ -1,0 +1,30 @@
+CREATE TABLE IF NOT EXISTS User (
+    username text NOT NULL PRIMARY KEY,
+    password text NOT NULL,
+    logged_in integer,
+    in_game integer
+    );
+
+CREATE TABLE IF NOT EXISTS Player (
+    username text NOT NULL PRIMARY KEY,
+    score integer,
+    train_hand text,
+    destination_hand text,
+    cars_left integer,
+    );
+
+CREATE TABLE IF NOT EXISTS Game (
+    gamename text NOT NULL PRIMARY KEY,
+    player1 string NOT NULL,
+    player2 string,
+    player3 string,
+    player4 string,
+    player5 string,
+    turns_left integer,
+    train_deck string,
+    train_discard string,
+    train_faceups string,
+    dest_deck string,
+    routes string
+    );
+

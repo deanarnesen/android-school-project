@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateGameActivity"
+    android:background="@drawable/tickettobidebackgroundblack">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fc8987"
+            android:text="@string/new_game"
+            android:textSize="34dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal|top"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+<!--Game Name-->
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:textColor="#a4c4fc"
+                android:textStyle="bold"
+                android:text="@string/game_name"/>
+            <EditText
+                android:paddingTop="20dp"
+                android:id="@+id/create_game_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/game_name"
+                android:textAlignment="center"
+                android:textColor="#bdbfbf"
+                android:textColorHint="#bdbfbf"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="#a4c4fc"
+            android:textStyle="bold"
+            android:text="@string/number_players"/>
+        <EditText
+            android:paddingTop="20dp"
+            android:id="@+id/create_game_numberpLayers"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/size"
+            android:textAlignment="center"
+            android:textColor="#bdbfbf"
+            android:textColorHint="#bdbfbf"/>
+
+    </LinearLayout>
+
+        <!--Num Players        -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+            <Button
+                android:paddingTop="20dp"
+                android:id="@+id/create_game_button"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:background="@drawable/mybutton"
+                android:text="@string/create_game"
+                android:textColor="#fff"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+            <Button
+                android:paddingTop="20dp"
+                android:id="@+id/create_game_cancel_button"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:background="@drawable/mycancelbutton"
+                android:text="@string/cancel"
+                android:textColor="#fff"/>
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

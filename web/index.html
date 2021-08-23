@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+</head>
+<title>Xollot Home</title>
+
+
+<body>
+
+   <h1>HELLO WORLD</h1>
+
+
+   <button type="submit" onclick="myFunction()">Send End Game Screen</button>
+
+   <p id="demo"></p>
+
+
+   <script>
+function myFunction() {
+
+
+    var handle = "/test"
+    var requestBody = "I HAVE NO IDEA WHAT I AM DOING"
+    var token =  "token"
+    var method = "post"
+    send (handle, requestBody, method, token);
+
+
+
+
+
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+
+
+function send(path, params, method, token)
+	{
+		var obj = new XMLHttpRequest();
+
+		obj.onreadystatechange = function () {
+			var response = obj.responseText;
+
+		};
+
+		obj.open(method,path,false);
+		obj.setRequestHeader("Content-Type", "application/json");
+		obj.setRequestHeader("Authorization", token);
+		obj.send(params);
+	}
+
+   </script>
+
+</body>
+
+</html>

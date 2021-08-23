@@ -1,0 +1,2151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapFragmentGame"
+    android:background="#7f1f20"
+    android:fitsSystemWindows="true"
+    android:layout_gravity="right"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2"
+                android:orientation="horizontal"
+                android:rowCount="1">
+
+
+                <RelativeLayout
+                    android:layout_width="579dp"
+                    android:layout_height="306dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:background="@drawable/mapv2">
+
+                    <Button
+                        android:id="@+id/map_vancouver_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="54dp"
+                        android:layout_marginTop="37dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+
+                    <Button
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignEnd="@+id/map_vancouver_button"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="48dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="toEndScreen" />
+
+                    <Button
+                        android:id="@+id/map_calgary_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="129dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_winnipeg_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="258dp"
+                        android:layout_marginTop="34dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_sault_st_marie_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="391dp"
+                        android:layout_marginTop="58dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_montreal_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="500dp"
+                        android:layout_marginTop="27dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_boston_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="539dp"
+                        android:layout_marginTop="55dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_new_york_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="509dp"
+                        android:layout_marginTop="88dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_toronto_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="449dp"
+                        android:layout_marginTop="67dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_pitsburgh_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="462dp"
+                        android:layout_marginTop="111dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_chicago_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="385dp"
+                        android:layout_marginTop="114dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_washington_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="512dp"
+                        android:layout_marginTop="127dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_raleigh_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="479dp"
+                        android:layout_marginTop="157dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_charleston_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="497dp"
+                        android:layout_marginTop="188dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_miami_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="515dp"
+                        android:layout_marginTop="260dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_atlanta_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="444dp"
+                        android:layout_marginTop="187dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_nashville_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="416dp"
+                        android:layout_marginTop="170dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_new_orleans_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="389dp"
+                        android:layout_marginTop="245dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_little_rock_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="352dp"
+                        android:layout_marginTop="192dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_saint_louis_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="363dp"
+                        android:layout_marginTop="152dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+
+                    <Button
+                        android:id="@+id/map_duluth_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="318dp"
+                        android:layout_marginTop="88dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_omaha_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="299dp"
+                        android:layout_marginTop="128dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_kansas_city_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="313dp"
+                        android:layout_marginTop="152dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_oklahoma_city_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="303dp"
+                        android:layout_marginTop="189dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_dallas_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="312dp"
+                        android:layout_marginTop="229dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+
+                    <Button
+                        android:id="@+id/map_houston_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="336dp"
+                        android:layout_marginTop="251dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_elpaso_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="209dp"
+                        android:layout_marginTop="240dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+
+                    <Button
+                        android:id="@+id/map_santa_fe_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="214dp"
+                        android:layout_marginTop="199dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+
+                    <Button
+                        android:id="@+id/map_denver_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="217dp"
+                        android:layout_marginTop="159dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+
+                    <Button
+                        android:id="@+id/map_helena_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="187dp"
+                        android:layout_marginTop="90dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+
+                    <Button
+                        android:id="@+id/map_seattle_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="53dp"
+                        android:layout_marginTop="65dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+
+                    <Button
+                        android:id="@+id/map_portland_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="39dp"
+                        android:layout_marginTop="85dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_salt_lake_city_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="143dp"
+                        android:layout_marginTop="144dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+
+                    <Button
+                        android:id="@+id/map_san_francisco_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="33dp"
+                        android:layout_marginTop="173dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+
+                    <Button
+                        android:id="@+id/map_las_vegas_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="112dp"
+                        android:layout_marginTop="194dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <Button
+                        android:id="@+id/map_los_angeles_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="75dp"
+                        android:layout_marginTop="220dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+
+                    <Button
+                        android:id="@+id/map_phoenix_button"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="142dp"
+                        android:layout_marginTop="222dp"
+                        android:background="@drawable/button_city"
+                        android:onClick="showPopup" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_van_seat"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="54dp"
+                        android:layout_marginTop="51dp"
+                        android:src="@drawable/path_van_seat_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_van_seat2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="61dp"
+                        android:layout_marginTop="51dp"
+                        android:src="@drawable/path_van_seat2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_seat_port"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="74dp"
+                        android:src="@drawable/path_seat_port_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_seat_port2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="51dp"
+                        android:layout_marginTop="77dp"
+                        android:src="@drawable/path_seat_port2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_van_cal"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="69dp"
+                        android:layout_marginTop="36dp"
+                        android:src="@drawable/path_van_calg_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_cal_wini"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="140dp"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/path_calg_winnni_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_seat_cal"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="67dp"
+                        android:layout_marginTop="44dp"
+                        android:src="@drawable/path_seat_calg_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_port_sanfra"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="23dp"
+                        android:layout_marginTop="96dp"
+                        android:src="@drawable/path_sanfra_port_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_port_sanfra2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="32dp"
+                        android:layout_marginTop="96dp"
+                        android:src="@drawable/path_sanfra_port2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_sanfra_losan"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="45dp"
+                        android:layout_marginTop="185dp"
+                        android:src="@drawable/path_sanfra_losang_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_sanfra_losan2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="38dp"
+                        android:layout_marginTop="189dp"
+                        android:src="@drawable/path_sanfra_losang2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_port_salt"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="89dp"
+                        android:src="@drawable/path_port_salt_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_seat_helen"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="63dp"
+                        android:layout_marginTop="75dp"
+                        android:src="@drawable/path_seatt_helen_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_cal_helen"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="137dp"
+                        android:layout_marginTop="41dp"
+                        android:src="@drawable/path_calg_helen_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_sanfra_salt"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="46dp"
+                        android:layout_marginTop="147dp"
+                        android:src="@drawable/path_sanfra_salt_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_sanfra_salt2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="47dp"
+                        android:layout_marginTop="154dp"
+                        android:src="@drawable/path_sanfra_salt2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_salt_helen"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="152dp"
+                        android:layout_marginTop="103dp"
+                        android:src="@drawable/path_salt_helen_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_helen_wini"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="197dp"
+                        android:layout_marginTop="44dp"
+                        android:src="@drawable/path_helen_winnni_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_losan_lasveg"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="83dp"
+                        android:layout_marginTop="198dp"
+                        android:src="@drawable/path_losan_lasveg_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_lasveg_salt"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="123dp"
+                        android:layout_marginTop="158dp"
+                        android:src="@drawable/path_lasveg_salt_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_salt_denver"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="155dp"
+                        android:layout_marginTop="146dp"
+                        android:src="@drawable/path_salt_denver_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_salt_denver2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="154dp"
+                        android:layout_marginTop="153dp"
+                        android:src="@drawable/path_salt_denver2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_phoenix_elpas"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="157dp"
+                        android:layout_marginTop="231dp"
+                        android:src="@drawable/path_phoenix_elpaso_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_phoenix_denver"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="150dp"
+                        android:layout_marginTop="168dp"
+                        android:src="@drawable/path_phoenix_denver_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_wini_dulut"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="262dp"
+                        android:layout_marginTop="46dp"
+                        android:src="@drawable/path_winnni_dulut_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_losan_elpaso"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="88dp"
+                        android:layout_marginTop="230dp"
+                        android:src="@drawable/path_loans_elpaso_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_losan_phoenix"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginTop="221dp"
+                        android:src="@drawable/path_loans_phoenix_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_phoenix_santaf"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="157dp"
+                        android:layout_marginTop="205dp"
+                        android:src="@drawable/path_phoenix_santaf_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_helen_dulut"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="199dp"
+                        android:layout_marginTop="93dp"
+                        android:src="@drawable/path_helen_dulut_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_helen_oma"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="202dp"
+                        android:layout_marginTop="99dp"
+                        android:src="@drawable/path_helen_oma_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_denver_helen"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="192dp"
+                        android:layout_marginTop="104dp"
+                        android:src="@drawable/path_denver_helen_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_santaf_denver"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="218dp"
+                        android:layout_marginTop="173dp"
+                        android:src="@drawable/path_santaf_denver_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_elpaso_santaf"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="216dp"
+                        android:layout_marginTop="212dp"
+                        android:src="@drawable/path_elpaso_santaf_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_denver_oma"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="225dp"
+                        android:layout_marginTop="134dp"
+                        android:src="@drawable/path_denver_oma_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_denver_kan"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="232dp"
+                        android:layout_marginTop="155dp"
+                        android:src="@drawable/path_denver_kan_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_denver_kan2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="232dp"
+                        android:layout_marginTop="162dp"
+                        android:src="@drawable/path_denver_kan2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_denver_okla"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="224dp"
+                        android:layout_marginTop="172dp"
+                        android:src="@drawable/path_denver_okla_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_santaf_okla"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="228dp"
+                        android:layout_marginTop="201dp"
+                        android:src="@drawable/path_santaf_okla_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_elpaso_dallas"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="235dp"
+                        android:layout_marginTop="237dp"
+                        android:src="@drawable/path_elpaso_dalla_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_elpaso_okla"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/frag_map_denver_okla"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="222dp"
+                        android:layout_marginTop="198dp"
+                        android:src="@drawable/path_elpaso_okla_red"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_elpaso_houst"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="219dp"
+                        android:layout_marginTop="249dp"
+                        android:src="@drawable/path_elpaso_houst_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_newo_houst"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="350dp"
+                        android:layout_marginTop="248dp"
+                        android:src="@drawable/path_newo_houst_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_winni_sault"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="272dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/path_winnni_sault_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_dulut_sault"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="333dp"
+                        android:layout_marginTop="67dp"
+                        android:src="@drawable/path_dulut_sault_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_dulut_toron"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="334dp"
+                        android:layout_marginTop="77dp"
+                        android:src="@drawable/path_dulut_toron_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_sault_montr"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="403dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/path_sault_montr_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_sault_toron"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="406dp"
+                        android:layout_marginTop="64dp"
+                        android:src="@drawable/path_sault_toron_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_montr_toron"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="457dp"
+                        android:layout_marginTop="36dp"
+                        android:src="@drawable/path_motr_toron_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_toron_pits"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="460dp"
+                        android:layout_marginTop="79dp"
+                        android:src="@drawable/path_toron_pits_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_chica_toron"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="388dp"
+                        android:layout_marginTop="81dp"
+                        android:src="@drawable/path_chica_toron_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_chica_dulut"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="330dp"
+                        android:layout_marginTop="96dp"
+                        android:src="@drawable/path_chica_dulut_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_dulut_oma"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="304dp"
+                        android:layout_marginTop="99dp"
+                        android:src="@drawable/path_dulut_oma_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_dulut_oma2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="311dp"
+                        android:layout_marginTop="101dp"
+                        android:src="@drawable/path_dulut_oma2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_chica_oma"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="313dp"
+                        android:layout_marginTop="117dp"
+                        android:src="@drawable/path_chica_oma_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_oma_kan"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="306dp"
+                        android:layout_marginTop="140dp"
+                        android:src="@drawable/path_oma_kan_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_oma_kan2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="312dp"
+                        android:layout_marginTop="137dp"
+                        android:src="@drawable/path_oma_kan2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_okla_kan"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="305dp"
+                        android:layout_marginTop="165dp"
+                        android:src="@drawable/path_okla_kan_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_okla_kan2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="312dp"
+                        android:layout_marginTop="166dp"
+                        android:src="@drawable/path_okla_kan2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_kan_saint"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="327dp"
+                        android:layout_marginTop="158dp"
+                        android:src="@drawable/path_kan_saint_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_kan_saint2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="328dp"
+                        android:layout_marginTop="151dp"
+                        android:src="@drawable/path_kan_saint2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_chica_saint"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="363dp"
+                        android:layout_marginTop="126dp"
+                        android:src="@drawable/path_chicago_saint_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_chica_saint2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="370dp"
+                        android:layout_marginTop="129dp"
+                        android:src="@drawable/path_chicago_saint2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_litter_saint"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="358dp"
+                        android:layout_marginTop="165dp"
+                        android:src="@drawable/path_littler_saint_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_okla_litter"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="319dp"
+                        android:layout_marginTop="195dp"
+                        android:src="@drawable/path_okla_littler_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_dallas_okla"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="314dp"
+                        android:layout_marginTop="201dp"
+                        android:src="@drawable/path_dallas_okla_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_dallas_okla2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="307dp"
+                        android:layout_marginTop="202dp"
+                        android:src="@drawable/path_dallas_okla_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_dallas_houst"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="321dp"
+                        android:layout_marginTop="242dp"
+                        android:src="@drawable/path_dallas_houst_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_dallas_houst2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="325dp"
+                        android:layout_marginTop="236dp"
+                        android:src="@drawable/path_dallas_houst2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_dallas_litter"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="325dp"
+                        android:layout_marginTop="202dp"
+                        android:src="@drawable/path_dalla_littler_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_newo_litter"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="360dp"
+                        android:layout_marginTop="204dp"
+                        android:src="@drawable/path_newo_littler_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_litter_nash"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="367dp"
+                        android:layout_marginTop="179dp"
+                        android:src="@drawable/path_littler_nash_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_chica_pits"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="398dp"
+                        android:layout_marginTop="106dp"
+                        android:src="@drawable/path_chica_pits_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_chica_pits2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="397dp"
+                        android:layout_marginTop="114dp"
+                        android:src="@drawable/path_chica_pits2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_pits_saint"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="376dp"
+                        android:layout_marginTop="118dp"
+                        android:src="@drawable/path_pits_saint_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_bost_montr"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="511dp"
+                        android:layout_marginTop="34dp"
+                        android:src="@drawable/path_bost_motr_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_bost_montr2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="506dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/path_bost_motr2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_montr_newy"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="500dp"
+                        android:layout_marginTop="40dp"
+                        android:src="@drawable/path_motr_newy_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_boston_newy"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="516dp"
+                        android:layout_marginTop="67dp"
+                        android:src="@drawable/path_bost_newy_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_boston_newy2"
+
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="522dp"
+                        android:layout_marginTop="71dp"
+                        android:src="@drawable/path_bost_newy_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_newy_pits"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="469dp"
+                        android:layout_marginTop="90dp"
+                        android:src="@drawable/path_newy_pits_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_newy_pits2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="473dp"
+                        android:layout_marginTop="96dp"
+                        android:src="@drawable/path_newy_pits2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_newy_wash"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="513dp"
+                        android:layout_marginTop="104dp"
+                        android:src="@drawable/path_newy_wash_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_newy_wash2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="520dp"
+                        android:layout_marginTop="104dp"
+                        android:src="@drawable/path_newy_wash2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_pits_wash"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="479dp"
+                        android:layout_marginTop="120dp"
+                        android:src="@drawable/path_pits_wash_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_nash_saint"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="376dp"
+                        android:layout_marginTop="164dp"
+                        android:src="@drawable/path_nash_saint_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_nash_pits"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="411dp"
+                        android:layout_marginTop="123dp"
+                        android:src="@drawable/path_nash_pits_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_nash_raleig"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="429dp"
+                        android:layout_marginTop="159dp"
+                        android:src="@drawable/path_nash_raleig_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_pits_raleig"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="469dp"
+                        android:layout_marginTop="126dp"
+                        android:src="@drawable/path_pits_raleig_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_wash_raleig"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="490dp"
+                        android:layout_marginTop="138dp"
+                        android:src="@drawable/path_wash_raleig_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_wash_raleig2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="493dp"
+                        android:layout_marginTop="143dp"
+                        android:src="@drawable/path_wash_raleig2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_atla_nash"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="428dp"
+                        android:layout_marginTop="179dp"
+                        android:src="@drawable/path_atla_nashv_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_atla_raleig"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="452dp"
+                        android:layout_marginTop="166dp"
+                        android:src="@drawable/path_atla_raleig_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_atla_raleig2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="457dp"
+                        android:layout_marginTop="171dp"
+                        android:src="@drawable/path_atla_raleig2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_charl_raleig"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="489dp"
+                        android:layout_marginTop="168dp"
+                        android:src="@drawable/path_charl_raleig_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_atla_newo"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="400dp"
+                        android:layout_marginTop="198dp"
+                        android:src="@drawable/path_atla_newo_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_atla_newo2"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="393dp"
+                        android:layout_marginTop="192dp"
+                        android:src="@drawable/path_atla_newo2_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_atla_charl"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="460dp"
+                        android:layout_marginTop="194dp"
+                        android:src="@drawable/path_atla_charles_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_miami_charl"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="502dp"
+                        android:layout_marginTop="200dp"
+                        android:src="@drawable/path_miami_charles_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_miami_newo"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="408dp"
+                        android:layout_marginTop="236dp"
+                        android:src="@drawable/path_miami_newo_red" />
+
+                    <ImageView
+                        android:id="@+id/frag_map_atla_miami"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="451dp"
+                        android:layout_marginTop="198dp"
+                        android:src="@drawable/path_atla_miami_red" />
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="306dp"
+                    android:layout_columnWeight="1"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/map_deck_cards"
+                        android:layout_width="100dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:onClick="drawCardDeck"
+                        android:src="@drawable/deck_back" />
+
+                    <ImageView
+                        android:id="@+id/map_show_card1"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:onClick="drawCard1"
+                        android:src="@drawable/black_train4" />
+
+                    <ImageView
+                        android:id="@+id/map_show_card2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:onClick="drawCard2"
+                        android:src="@drawable/wild_train0" />
+
+                    <ImageView
+                        android:id="@+id/map_show_card3"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:onClick="drawCard3"
+                        android:src="@drawable/red_train" />
+
+                    <ImageView
+                        android:id="@+id/map_show_card4"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:onClick="drawCard4"
+                        android:src="@drawable/white_train" />
+
+                    <ImageView
+                        android:id="@+id/map_show_card5"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:scaleType="fitXY"
+                        android:onClick="drawCard5"
+                        android:src="@drawable/blue_train" />
+
+                </LinearLayout>
+
+
+                <!--<GridLayout-->
+                <!--android:layout_width="1dp"-->
+                <!--android:layout_height="306dp"-->
+                <!--android:layout_column="1"-->
+                <!--android:layout_columnWeight="1"-->
+                <!--android:orientation="vertical"-->
+                <!--android:rowCount="5">-->
+
+                <!--<ImageView-->
+                <!--android:id="@+id/map_card1_display"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:layout_rowWeight="1"-->
+                <!--android:src="@drawable/black_train4" />-->
+                <!--<ImageView-->
+                <!--android:id="@+id/map_card1_display"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:layout_rowWeight="1"-->
+                <!--android:src="@drawable/black_train4" />-->
+                <!--<ImageView-->
+                <!--android:id="@+id/map_card1_display"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:layout_rowWeight="1"-->
+                <!--android:src="@drawable/black_train4" />-->
+
+
+                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/map_card2_display"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:scaleType="fitXY"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_rowWeight="1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@drawable/red_train"/>&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/map_card3_display"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:scaleType="fitXY"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_rowWeight="1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@drawable/red_train" />&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/map_card4_display"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:scaleType="fitXY"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_rowWeight="1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@drawable/red_train" />&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/map_card5_display"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="fill_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:scaleType="fitXY"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_rowWeight="1"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:src="@drawable/red_train" />&ndash;&gt;-->
+
+                <!--</GridLayout>-->
+
+
+            </GridLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--<GridLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:columnCount="5"-->
+            <!--android:rowCount="1">-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_for_tables_players"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+
+                <!--&lt;!&ndash;PLayer 1 &ndash;&gt;-->
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#99074705">
+
+                    <TableRow
+                        android:id="@+id/stats"
+                        android:background="#99474747"
+                        android:gravity="center">
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="@string/stats"
+                            android:textSize="8dp"
+                            android:textColor="#bbc5c1"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:paddingLeft="5dp"
+                            android:text="@string/stats_dest_cards_left"
+                            android:textColor="#bbc5c1"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/stats_dest_cards"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/value"
+                            android:textColor="#bbc5c1"
+                            android:textSize="10dp" />
+                    </TableRow>
+
+                    <TableRow>
+
+                        <TextView
+                            android:paddingLeft="5dp"
+                            android:text="@string/stats_train_cards_left"
+                            android:textColor="#bbc5c1"
+                            android:textSize="10dp" />
+
+                        <TextView
+                            android:id="@+id/stats_train_cards"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="@string/value"
+                            android:textColor="#bbc5c1"
+                            android:textSize="10dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:padding="5dp">
+
+                        <Button
+                            android:text="Draw Dest"
+                            android:layout_weight="1"
+                            android:textSize="8dp"
+                            android:background="@drawable/mybutton"
+                            android:layout_height="30dp"
+                            android:onClick="drawDestCard"/>
+
+
+                    </TableRow>
+
+
+                </TableLayout>
+
+
+                <!--&lt;!&ndash;PLayer 2 &ndash;&gt;-->
+                <!--<TableLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="#99070947">-->
+
+                <!--<TableRow-->
+                <!--android:id="@+id/map_p2_username"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:background="#99131464">-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:text="@string/player_name"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textStyle="bold"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_score"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p2_score"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_num_train"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p2_train_cards"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_num_destination"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p2_dest"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_num_train_remainng"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p2_reaminiang_train"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+
+                <!--</TableRow>-->
+
+
+                <!--</TableLayout>-->
+
+
+                <!--&lt;!&ndash;PLayer 3 &ndash;&gt;-->
+                <!--<TableLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="#99474311">-->
+
+                <!--<TableRow-->
+                <!--android:id="@+id/map_p3_username"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:background="#9980791f">-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:text="@string/player_name"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textStyle="bold"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_score"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p3_score"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_num_train"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p3_train_cards"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_num_destination"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p3_dest"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_num_train_remainng"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p3_reaminiang_train"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+
+                <!--</TableRow>-->
+
+
+                <!--</TableLayout>-->
+
+
+                <!--&lt;!&ndash;PLayer 4 &ndash;&gt;-->
+                <!--<TableLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="#99470602">-->
+
+                <!--<TableRow-->
+                <!--android:id="@+id/map_p4_username"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:background="#997a0e01">-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:text="@string/player_name"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textStyle="bold"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_score"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p4_score"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_num_train"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p4_train_cards"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_num_destination"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p4_dest"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_num_train_remainng"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p4_reaminiang_train"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+
+                <!--</TableRow>-->
+
+
+                <!--</TableLayout>-->
+
+
+                <!--&lt;!&ndash;PLayer 5 &ndash;&gt;-->
+                <!--<TableLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="#99474747">-->
+
+                <!--<TableRow-->
+                <!--android:id="@+id/map_p5_username"-->
+                <!--android:gravity="center"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:background="#000">-->
+                <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:text="@string/player_name"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textStyle="bold"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_score"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p5_score"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_num_train"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p5_train_cards"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_num_destination"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p5_dest"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--</TableRow>-->
+
+                <!--<TableRow>-->
+                <!--<TextView-->
+                <!--android:text="@string/player_num_train_remainng"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp"/>-->
+                <!--<TextView-->
+                <!--android:id="@+id/map_p5_reaminiang_train"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="@string/value"-->
+                <!--android:textColor="#bbc5c1"-->
+                <!--android:textSize="10dp" />-->
+
+                <!--</TableRow>-->
+
+                <!--</TableLayout>-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/map_train_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/mybutton"
+                        android:onClick="goToCards"
+                        android:text="@string/cards" />
+
+                    <Button
+                        android:id="@+id/map_chat_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/mybutton"
+                        android:onClick="goToChat"
+                        android:text="@string/chat" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--</GridLayout>-->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
